@@ -23,3 +23,8 @@ Preferences → Configure Paths → add:
 
 Ensure footprints reference models via:
 - `${DST_LIB}/3dmodels/...`
+
+##
+
+Contributors: 
+Kerr McLaren
