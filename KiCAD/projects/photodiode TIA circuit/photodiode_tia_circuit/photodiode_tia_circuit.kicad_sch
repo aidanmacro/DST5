@@ -1152,10 +1152,16 @@
 		(uuid "175870cf-4c9a-43ff-9aef-ca73ca39ca7b")
 	)
 	(junction
-		(at 134.62 116.84)
+		(at 139.7 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "68f61567-4a4a-4967-be5e-76e2716c1904")
+		(uuid "37154721-92d6-46d5-ba00-ba0cfb71b2d2")
+	)
+	(junction
+		(at 160.02 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6885f624-6776-4e2a-a255-161367523add")
 	)
 	(junction
 		(at 102.87 58.42)
@@ -1164,10 +1170,10 @@
 		(uuid "7c5e91f0-0cf4-47ee-b124-4f521598fd39")
 	)
 	(junction
-		(at 148.59 69.85)
+		(at 134.62 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bc2f41e6-bf44-443d-8952-f985fff2a89e")
+		(uuid "a8256c7a-fa9b-4762-9a70-92b1e4d74a9b")
 	)
 	(junction
 		(at 134.62 102.87)
@@ -1180,16 +1186,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f958e67a-a9b5-44f5-8da5-905ea86c010d")
-	)
-	(wire
-		(pts
-			(xy 130.81 67.31) (xy 132.08 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00c3f042-5b28-45e5-b5bc-7e745dc26013")
 	)
 	(wire
 		(pts
@@ -1223,6 +1219,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 116.84) (xy 143.51 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e505f1-c34d-4549-a3b6-d9d7f655b8c6")
+	)
+	(wire
+		(pts
 			(xy 110.49 62.23) (xy 105.41 62.23)
 		)
 		(stroke
@@ -1230,6 +1236,16 @@
 			(type default)
 		)
 		(uuid "151957d4-b327-4f48-bb2b-c3d0024303f1")
+	)
+	(wire
+		(pts
+			(xy 160.02 119.38) (xy 168.91 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1764adf2-d034-4d27-a828-fcf9ba1562dc")
 	)
 	(wire
 		(pts
@@ -1243,7 +1259,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 69.85) (xy 148.59 69.85)
+			(xy 130.81 121.92) (xy 130.81 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26aafb61-7de2-4e1e-80ac-3b82ef1da67c")
+	)
+	(wire
+		(pts
+			(xy 158.75 119.38) (xy 160.02 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1253,17 +1279,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 130.81 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b7ec2ce-5868-4218-abd2-5f687a8afc72")
-	)
-	(wire
-		(pts
-			(xy 140.97 119.38) (xy 140.97 120.65)
+			(xy 168.91 121.92) (xy 168.91 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1283,13 +1299,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 132.08 72.39)
+			(xy 139.7 121.92) (xy 143.51 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60c831bb-a4a1-4d23-81bf-b4cf019e0ff5")
+		(uuid "57094a56-aaf4-481a-b637-94383ec21585")
+	)
+	(wire
+		(pts
+			(xy 132.08 121.92) (xy 130.81 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62168921-0075-4760-b809-8c7fa8a7456e")
 	)
 	(wire
 		(pts
@@ -1343,43 +1369,23 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 69.85) (xy 148.59 78.74)
+			(xy 139.7 134.62) (xy 139.7 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7d672c40-4477-4ba7-9632-744e0568dcb9")
+		(uuid "8f7eb7b6-3978-4f53-a48a-d3f9b3ef5425")
 	)
 	(wire
 		(pts
-			(xy 148.59 69.85) (xy 147.32 69.85)
+			(xy 144.78 134.62) (xy 139.7 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8195ab2f-de55-4a9a-8b8d-ce144ec513c4")
-	)
-	(wire
-		(pts
-			(xy 130.81 78.74) (xy 148.59 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88ab2227-3362-41f8-9eca-7ce36505d631")
-	)
-	(wire
-		(pts
-			(xy 134.62 116.84) (xy 140.97 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e9224b2-1df1-47d9-b7ea-ce85210f268b")
+		(uuid "8f92fea5-0e37-4baa-80f9-b5bf2c3d4158")
 	)
 	(wire
 		(pts
@@ -1453,6 +1459,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 134.62) (xy 160.02 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc26ce0d-dc1f-45dc-bc3c-eed03b3deaa3")
+	)
+	(wire
+		(pts
 			(xy 114.3 91.44) (xy 114.3 102.87)
 		)
 		(stroke
@@ -1493,6 +1509,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 134.62) (xy 160.02 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb177ec6-1c63-43b6-9d22-5978d7db85aa")
+	)
+	(wire
+		(pts
 			(xy 118.11 119.38) (xy 116.84 119.38)
 		)
 		(stroke
@@ -1520,83 +1546,6 @@
 			(type default)
 		)
 		(uuid "fc1b704b-1cc2-4541-a881-4fd81372452d")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "033335b4-5473-4ede-875b-ab88d70c1a37")
-		(property "Reference" "#PWR03"
-			(at 130.81 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 69.342 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ce5ab416-8169-483f-8740-407f07418df1")
-		)
-		(instances
-			(project "photodiode_tia_circuit"
-				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
@@ -1690,7 +1639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd7ed03-f8ca-47c8-b532-879e2e02ef3e")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 104.14 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1712,7 +1661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 105.41 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -1772,7 +1721,7 @@
 		(instances
 			(project "photodiode_tia_circuit"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "U2")
+					(reference "U1")
 					(unit 3)
 				)
 			)
@@ -1780,7 +1729,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 146.05 116.84 0)
+		(at 173.99 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1791,7 +1740,7 @@
 		(fields_autoplaced yes)
 		(uuid "20e072d5-42a0-41ed-b724-5c3f5599aaa8")
 		(property "Reference" "J_OUT1"
-			(at 147.32 116.8399 0)
+			(at 175.26 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1802,7 +1751,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 147.32 119.3799 0)
+			(at 175.26 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1813,7 +1762,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 146.05 116.84 0)
+			(at 173.99 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1824,7 +1773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 116.84 0)
+			(at 173.99 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1835,7 +1784,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 146.05 116.84 0)
+			(at 173.99 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1855,6 +1804,85 @@
 			(project "photodiode_tia_circuit"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "J_OUT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 135.89 121.92 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "290cbb38-5352-4452-a608-0a5ae4d14b7f")
+		(property "Reference" "Rf3"
+			(at 136.144 124.46 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 136.144 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 135.89 120.142 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 135.89 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6140945-3eba-43a9-bff4-2cf352108a75")
+		)
+		(pin "2"
+			(uuid "52624503-d7fe-4dd9-86e4-1902c84ed353")
+		)
+		(instances
+			(project "photodiode_tia_circuit"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "Rf3")
 					(unit 1)
 				)
 			)
@@ -1959,7 +1987,7 @@
 				)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "2pF"
 			(at 123.19 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2019,7 +2047,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6L92")
-		(at 139.7 69.85 0)
+		(at 151.13 119.38 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2029,8 +2057,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bbc97ad-e171-4734-a332-83ff0926551d")
-		(property "Reference" "U2"
-			(at 139.7 59.69 0)
+		(property "Reference" "U1"
+			(at 151.13 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2040,7 +2068,7 @@
 			)
 		)
 		(property "Value" "MCP6292"
-			(at 139.7 62.23 0)
+			(at 151.13 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2049,8 +2077,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.7 69.85 0)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
+			(at 151.13 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2061,7 +2089,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf"
-			(at 139.7 69.85 0)
+			(at 151.13 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2072,7 +2100,7 @@
 			)
 		)
 		(property "Description" "10 MHz, 850 µA Op Amps, SOIC-8/MSOP-8"
-			(at 139.7 69.85 0)
+			(at 151.13 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2109,7 +2137,7 @@
 		(instances
 			(project "photodiode_tia_circuit"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "U2")
+					(reference "U1")
 					(unit 2)
 				)
 			)
@@ -2137,7 +2165,7 @@
 				)
 			)
 		)
-		(property "Value" "10M R"
+		(property "Value" "470k"
 			(at 123.19 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2458,6 +2486,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 130.81 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96658c83-5c93-4b2c-8a52-cb507cc677c9")
+		(property "Reference" "#PWR014"
+			(at 130.81 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bf69702-9d8a-4b9d-98af-e9545104474a")
+		)
+		(instances
+			(project "photodiode_tia_circuit"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 102.87 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -2528,84 +2634,6 @@
 			(project "photodiode_tia_circuit"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a498ef09-1541-41d8-a796-402c8012dac7")
-		(property "Reference" "#PWR01"
-			(at 156.21 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8eff09f2-a16f-4304-bf7a-14498a0c76ef")
-		)
-		(instances
-			(project "photodiode_tia_circuit"
-				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2789,7 +2817,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 114.3 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3004,8 +3032,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 140.97 120.65 0)
+		(lib_id "Device:R")
+		(at 148.59 134.62 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3014,10 +3042,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d8de976c-83a4-48be-9647-11ab52fcc773")
-		(property "Reference" "#PWR08"
-			(at 140.97 127 0)
-			(hide yes)
+		(uuid "d6fee635-73bc-4a5f-bdc5-18c4c920d7ca")
+		(property "Reference" "Rf2"
+			(at 148.59 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3026,8 +3053,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 140.97 125.73 0)
+		(property "Value" "100k"
+			(at 148.59 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3036,8 +3063,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 140.97 120.65 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 148.59 132.842 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3048,7 +3075,88 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 120.65 0)
+			(at 148.59 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.59 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f97da0f-9f75-4323-b8d2-bc8eaafc3f11")
+		)
+		(pin "2"
+			(uuid "377a3bd6-946e-4efd-b6d6-1dd9de47d743")
+		)
+		(instances
+			(project "photodiode_tia_circuit"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "Rf2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 168.91 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8de976c-83a4-48be-9647-11ab52fcc773")
+		(property "Reference" "#PWR08"
+			(at 168.91 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3059,7 +3167,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 120.65 0)
+			(at 168.91 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
