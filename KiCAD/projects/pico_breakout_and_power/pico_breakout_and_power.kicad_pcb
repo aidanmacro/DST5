@@ -129,7 +129,7 @@
 	(footprint "Module:RaspberryPi_Pico_SMD"
 		(layer "F.Cu")
 		(uuid "0c63dfdc-47ef-4ad3-b08a-987700cb66ce")
-		(at 100.85 56.1875)
+		(at 134.933563 84.084311)
 		(descr "Raspberry Pi Pico (non-W) surface-mount footprint for reflow soldering with test points and debug pads, supports Raspberry Pi Pico 2 (non-W), https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf")
 		(tags "module usb pcb swd")
 		(property "Reference" "A1"
@@ -2278,11 +2278,11 @@
 			)
 			(polygon
 				(pts
-					(xy 100.902139 50.671955) (xy 100.936068 50.545333) (xy 101.001612 50.431806) (xy 101.094306 50.339112)
-					(xy 101.207833 50.273568) (xy 101.334455 50.239639) (xy 101.4 50.2375) (xy 101.85 50.2375) (xy 101.85 52.1375)
-					(xy 101.4 52.1375) (xy 101.334455 52.135361) (xy 101.207833 52.101432) (xy 101.094306 52.035888)
-					(xy 101.001612 51.943194) (xy 100.936068 51.829667) (xy 100.902139 51.703045) (xy 100.9 51.6375)
-					(xy 100.9 50.7375)
+					(xy 134.985702 78.568766) (xy 135.019631 78.442144) (xy 135.085175 78.328617) (xy 135.177869 78.235923)
+					(xy 135.291396 78.170379) (xy 135.418018 78.13645) (xy 135.483563 78.134311) (xy 135.933563 78.134311)
+					(xy 135.933563 80.034311) (xy 135.483563 80.034311) (xy 135.418018 80.032172) (xy 135.291396 79.998243)
+					(xy 135.177869 79.932699) (xy 135.085175 79.840005) (xy 135.019631 79.726478) (xy 134.985702 79.599856)
+					(xy 134.983563 79.534311) (xy 134.983563 78.634311)
 				)
 			)
 		)
@@ -2313,11 +2313,11 @@
 			)
 			(polygon
 				(pts
-					(xy 101.85 52.1375) (xy 102.3 52.1375) (xy 102.365545 52.135361) (xy 102.492167 52.101433) (xy 102.605694 52.035888)
-					(xy 102.698388 51.943194) (xy 102.763933 51.829667) (xy 102.797861 51.703045) (xy 102.8 51.6375)
-					(xy 102.8 50.7375) (xy 102.797861 50.671955) (xy 102.763933 50.545333) (xy 102.698388 50.431806)
-					(xy 102.605694 50.339112) (xy 102.492167 50.273567) (xy 102.365545 50.239639) (xy 102.3 50.2375)
-					(xy 101.85 50.2375)
+					(xy 135.933563 80.034311) (xy 136.383563 80.034311) (xy 136.449108 80.032172) (xy 136.57573 79.998244)
+					(xy 136.689257 79.932699) (xy 136.781951 79.840005) (xy 136.847496 79.726478) (xy 136.881424 79.599856)
+					(xy 136.883563 79.534311) (xy 136.883563 78.634311) (xy 136.881424 78.568766) (xy 136.847496 78.442144)
+					(xy 136.781951 78.328617) (xy 136.689257 78.235923) (xy 136.57573 78.170378) (xy 136.449108 78.13645)
+					(xy 136.383563 78.134311) (xy 135.933563 78.134311)
 				)
 			)
 		)
@@ -2452,7 +2452,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4f533395-10fb-4d56-a944-2a1abfd331c7")
-		(at 127.55 32.005)
+		(at 161.633563 59.901811)
 		(descr "Through hole straight socket strip, 1x17, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x17 2.54mm single row")
 		(property "Reference" "J1"
@@ -2889,7 +2889,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f4b71210-e07f-48b5-b284-d736aa8534a3")
-		(at 72.225 32.13)
+		(at 106.308563 60.026811)
 		(descr "Through hole straight socket strip, 1x17, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x17 2.54mm single row")
 		(property "Reference" "J12"
@@ -3323,51 +3323,16 @@
 			)
 		)
 	)
-	(segment
-		(start 72.225 32.13)
-		(end 91.295 32.13)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "/GPIO0")
-		(uuid "92e170ac-167a-4f59-bffc-1a086c46cfeb")
-	)
-	(segment
-		(start 91.295 32.13)
-		(end 91.5 31.925)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "/GPIO0")
-		(uuid "f6c89ff3-ddfc-43f0-b823-0eb1b1a285cb")
-	)
-	(zone
+	(gr_rect
+		(start 98.875 51.575)
+		(end 169.025 115.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "80b76d63-fbcb-4261-9977-fc716077ff51")
-		(hatch edge 0.5)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.25)
-		(keepout
-			(tracks not_allowed)
-			(vias not_allowed)
-			(pads not_allowed)
-			(copperpour allowed)
-			(footprints allowed)
-		)
-		(placement
-			(enabled no)
-			(sheetname "")
-		)
-		(fill
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
-		)
-		(polygon
-			(pts
-				(xy 67.35 27.725) (xy 140.675 27.725) (xy 140.675 89.25) (xy 67.35 89.25)
-			)
-		)
+		(uuid "1360ae39-4ee7-43ab-a737-1a58fd7b0391")
 	)
 	(embedded_fonts no)
 )
