@@ -2245,6 +2245,10 @@
 		(uuid "fa5c32c6-991f-44a0-a6f1-58a95f62a237")
 	)
 	(no_connect
+		(at 158.75 130.81)
+		(uuid "05ce8fb0-73c7-4b37-bdf2-debf7c6778d4")
+	)
+	(no_connect
 		(at 158.75 92.71)
 		(uuid "11766ae5-484c-4a0b-970e-82bd7fa1f5ef")
 	)
@@ -2275,10 +2279,6 @@
 	(no_connect
 		(at 158.75 123.19)
 		(uuid "48f4f3b8-c3d3-4de0-9516-57a52a4a8f1e")
-	)
-	(no_connect
-		(at 231.14 115.57)
-		(uuid "4bea7eae-0a78-4c2b-8461-f47f4cd1182d")
 	)
 	(no_connect
 		(at 158.75 120.65)
@@ -2746,6 +2746,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 115.57) (xy 231.14 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b58d0d-04b6-4866-902d-fdc70b2830e5")
+	)
+	(wire
+		(pts
 			(xy 137.16 106.68) (xy 146.05 106.68)
 		)
 		(stroke
@@ -2776,6 +2786,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 130.81) (xy 173.99 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3040c97-225a-421b-a269-c4e5088f826a")
+	)
+	(wire
+		(pts
 			(xy 106.68 100.33) (xy 106.68 101.6)
 		)
 		(stroke
@@ -2783,16 +2803,6 @@
 			(type default)
 		)
 		(uuid "a96c5db1-2343-4b08-9477-d827086d1425")
-	)
-	(wire
-		(pts
-			(xy 231.14 115.57) (xy 219.71 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa5adad8-7844-46c4-89e6-92aec4010f6c")
 	)
 	(wire
 		(pts
@@ -2906,16 +2916,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 130.81) (xy 173.99 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d50f0907-b97c-41ea-83f3-b6fde45ec9d6")
-	)
-	(wire
-		(pts
 			(xy 231.14 130.81) (xy 219.71 130.81)
 		)
 		(stroke
@@ -3004,6 +3004,26 @@
 		)
 		(uuid "ef8fa60d-ae9c-469a-bcf8-6a472200733c")
 	)
+	(label "3V3(OUT)"
+		(at 243.84 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "066d0378-c3b4-4b47-9f09-c3f00cd90d77")
+	)
+	(label "VBUS_5V{slash}ANODE"
+		(at 59.69 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d2719cb-2abd-486a-be47-03e68e566b9a")
+	)
 	(label "VSYS"
 		(at 196.85 71.12 90)
 		(effects
@@ -3024,7 +3044,7 @@
 		)
 		(uuid "11e1aaf6-4685-4471-8670-2abae3cf348d")
 	)
-	(label "VBUS (5V)"
+	(label "VBUS_5V{slash}ANODE"
 		(at 111.76 83.82 0)
 		(effects
 			(font
@@ -3044,6 +3064,16 @@
 		)
 		(uuid "209fee44-94b0-4b4f-9a0b-46dd1353a089")
 	)
+	(label "GPIO28_ADC2"
+		(at 245.11 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "220d9462-4b31-4c0b-b9c2-071f77ab4c4b")
+	)
 	(label "GPIO7"
 		(at 163.83 110.49 0)
 		(effects
@@ -3053,26 +3083,6 @@
 			(justify left bottom)
 		)
 		(uuid "29bd150f-932b-4138-84ad-fe8595404b6d")
-	)
-	(label "Anode"
-		(at 59.69 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3379570b-fa48-439d-b740-266a80e8edaa")
-	)
-	(label "3V3(OUT)"
-		(at 246.38 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "36cece69-15a8-418d-bb23-87b2b39dd820")
 	)
 	(label "GPIO14"
 		(at 163.83 128.27 0)
@@ -3115,7 +3125,7 @@
 		(uuid "4279f5bb-eb30-437b-afcc-6869720bbaad")
 	)
 	(label "GPIO15"
-		(at 158.75 130.81 0)
+		(at 163.83 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3123,16 +3133,6 @@
 			(justify left bottom)
 		)
 		(uuid "4d11d619-f705-4f46-802f-c3463a9370e3")
-	)
-	(label "Anode"
-		(at 243.84 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "567b9575-8e8d-46fd-bce5-8743963a0309")
 	)
 	(label "3V3_EN"
 		(at 158.75 138.43 0)
@@ -3153,16 +3153,6 @@
 			(justify left bottom)
 		)
 		(uuid "5ea01724-b827-446d-82de-d8b687fa14ca")
-	)
-	(label "Cathode"
-		(at 245.11 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f662021-fc5d-4f87-8d28-c87e3325de11")
 	)
 	(label "GPIO19"
 		(at 222.25 107.95 0)
@@ -3274,7 +3264,7 @@
 		)
 		(uuid "a618d6e3-5eab-4661-a1b4-76e368ad1636")
 	)
-	(label "VBUS (5V)"
+	(label "VBUS_5V{slash}ANODE"
 		(at 201.93 64.77 90)
 		(effects
 			(font
@@ -3284,15 +3274,15 @@
 		)
 		(uuid "a6403369-bd0b-4857-ac05-ccb5b8683146")
 	)
-	(label "GPIO28_ADC2"
-		(at 245.11 100.33 0)
+	(label "GPIO22"
+		(at 74.93 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ac40d370-adc2-4160-a2ab-d48b6caaea74")
+		(uuid "a734e0b7-c7ca-49af-9c45-e202e16f062c")
 	)
 	(label "GPIO11"
 		(at 163.83 120.65 0)
@@ -3305,7 +3295,7 @@
 		(uuid "ba513a52-c61c-46d9-a832-8f146384715b")
 	)
 	(label "GPIO22"
-		(at 222.25 115.57 0)
+		(at 231.14 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3344,6 +3334,16 @@
 		)
 		(uuid "d275da11-2456-4575-a2f9-68ea74ecc067")
 	)
+	(label "Cathode"
+		(at 246.38 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d331d9ef-cc57-4e90-8356-e381c9c3a2b4")
+	)
 	(label "GPIO16"
 		(at 222.25 100.33 0)
 		(effects
@@ -3374,16 +3374,6 @@
 		)
 		(uuid "db2b2e02-b7d4-4950-b49f-c5f8f50d0db8")
 	)
-	(label "GPIO15"
-		(at 74.93 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "de0a00d0-a5f4-4f3c-8955-f16c3b90056b")
-	)
 	(label "GPIO10"
 		(at 163.83 118.11 0)
 		(effects
@@ -3393,6 +3383,16 @@
 			(justify left bottom)
 		)
 		(uuid "e6704a2b-0681-40f0-afe2-7f9118663adc")
+	)
+	(label "VBUS_5V{slash}ANODE"
+		(at 245.11 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8defe35-e656-42fc-9f92-39587329782e")
 	)
 	(label "GPIO4"
 		(at 163.83 102.87 0)
