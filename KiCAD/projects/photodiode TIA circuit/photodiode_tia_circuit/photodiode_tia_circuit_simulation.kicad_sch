@@ -1070,7 +1070,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".param period=100us \n.param width=10u\n.param amp=1m \n.param r0=0.1m \n.param dr=0.5m"
+	(text ".param period=100us \n.param width=10u\n.param amp=200n \n.param r0=1m \n.param dr=0.05m"
 		(exclude_from_sim no)
 		(at 34.29 102.87 0)
 		(effects
@@ -1111,6 +1111,12 @@
 		(uuid "456137b6-e60f-422b-9bb2-36b216dd0f42")
 	)
 	(junction
+		(at 63.5 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60413f83-cb74-418d-b569-eecaecaacc23")
+	)
+	(junction
 		(at 134.62 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1121,6 +1127,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d09c2b03-ae80-4271-9a32-0f076eea7680")
+	)
+	(junction
+		(at 83.82 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5ce4bc1-427c-45db-bb2d-2c743cb1854b")
+	)
+	(junction
+		(at 63.5 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db605caa-26eb-4ee9-b15f-cc578e00f357")
 	)
 	(junction
 		(at 114.3 114.3)
@@ -1160,6 +1178,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 121.92) (xy 53.34 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1833a0ba-f29e-4cd4-aba2-932f328a447e")
+	)
+	(wire
+		(pts
 			(xy 119.38 86.36) (xy 114.3 86.36)
 		)
 		(stroke
@@ -1180,6 +1208,36 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 115.57) (xy 83.82 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46837683-500d-46f6-85d8-e1cebef9c830")
+	)
+	(wire
+		(pts
+			(xy 53.34 115.57) (xy 63.5 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "478fde4f-4b59-4697-8bd2-36dd82dc971c")
+	)
+	(wire
+		(pts
+			(xy 63.5 133.35) (xy 63.5 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "567a6d94-88fd-4104-aefa-0f7f13a15f27")
+	)
+	(wire
+		(pts
 			(xy 147.32 121.92) (xy 151.13 121.92)
 		)
 		(stroke
@@ -1190,6 +1248,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 115.57) (xy 107.95 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594cb7ef-6595-4a5a-a128-e65c86a425f9")
+	)
+	(wire
+		(pts
 			(xy 139.7 121.92) (xy 137.16 121.92)
 		)
 		(stroke
@@ -1197,16 +1265,6 @@
 			(type default)
 		)
 		(uuid "62168921-0075-4760-b809-8c7fa8a7456e")
-	)
-	(wire
-		(pts
-			(xy 63.5 115.57) (xy 107.95 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "658adcda-1a2c-4406-a5a9-33462d7a1660")
 	)
 	(wire
 		(pts
@@ -1227,6 +1285,16 @@
 			(type default)
 		)
 		(uuid "6ea77f0f-f8b0-443a-893f-c33ec54321c5")
+	)
+	(wire
+		(pts
+			(xy 53.34 133.35) (xy 63.5 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b02384f-c177-4f94-91da-fe7ae0b0a73c")
 	)
 	(wire
 		(pts
@@ -1270,16 +1338,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 119.38) (xy 116.84 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e5f33dd-c6bd-45a1-9966-e912a296462b")
-	)
-	(wire
-		(pts
 			(xy 118.11 114.3) (xy 114.3 114.3)
 		)
 		(stroke
@@ -1307,6 +1365,16 @@
 			(type default)
 		)
 		(uuid "b7921a70-d5dc-4578-9881-4537dce2d25e")
+	)
+	(wire
+		(pts
+			(xy 116.84 119.38) (xy 116.84 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9b6619b-0c2e-4603-ba2e-901677d9b770")
 	)
 	(wire
 		(pts
@@ -1360,7 +1428,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 132.08) (xy 63.5 137.16)
+			(xy 63.5 132.08) (xy 63.5 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1387,6 +1455,16 @@
 			(type default)
 		)
 		(uuid "e6653610-3bd0-4772-b19e-d8586e0d96d5")
+	)
+	(wire
+		(pts
+			(xy 53.34 129.54) (xy 53.34 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c27685-43c0-4faa-a001-73a79e1eea9c")
 	)
 	(wire
 		(pts
@@ -1950,6 +2028,84 @@
 			(project "photodiode_tia_circuit_simulation"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52e4b9dc-a4fa-43ae-a532-849d4970bca8")
+		(property "Reference" "#PWR016"
+			(at 83.82 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7dc08c2a-45f1-443d-b9e0-f8951916a946")
+		)
+		(instances
+			(project "photodiode_tia_circuit_simulation"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -2534,6 +2690,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 83.82 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "981db8d5-5c6a-485b-b929-92cdb79414f2")
+		(property "Reference" "Rf4"
+			(at 89.408 119.126 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 90.17 122.174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 82.042 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce8a2387-30c6-46da-b87b-6449c38e782a")
+		)
+		(pin "2"
+			(uuid "0ee6345d-b206-4a58-9c1b-3134776b7c67")
+		)
+		(instances
+			(project "photodiode_tia_circuit_simulation"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "Rf4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 127 0)
 		(unit 1)
@@ -2764,6 +2999,88 @@
 			(project "photodiode_tia_circuit_simulation"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "Rf2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 53.34 125.73 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc6b8a15-c05a-487f-a2c0-ba064d62f4f7")
+		(property "Reference" "Cf2"
+			(at 57.15 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2pF"
+			(at 57.15 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P5.00mm"
+			(at 52.3748 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 53.34 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d7e5d911-6cc1-40cd-a0b1-910f630abd11")
+		)
+		(pin "1"
+			(uuid "9cdcf5a3-122c-43db-a6be-41e3b252f6b8")
+		)
+		(instances
+			(project "photodiode_tia_circuit_simulation"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "Cf2")
 					(unit 1)
 				)
 			)
