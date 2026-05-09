@@ -1070,7 +1070,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".param period=990us \n.param width=10u\n.param amp=20n \n.param r0=1m \n.param dr=0.1m"
+	(text ".param period=100us \n.param width=10u\n.param amp=1m \n.param r0=0.1m \n.param dr=0.5m"
 		(exclude_from_sim no)
 		(at 34.29 102.87 0)
 		(effects
