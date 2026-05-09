@@ -1070,9 +1070,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".param freq=0.25m\n.param pulse_on=50u\n.param peak_amp=0.5u\n.param decay_rate=0.2"
+	(text ".param period=990us \n.param width=10u\n.param amp=20n \n.param r0=1m \n.param dr=0.1m"
 		(exclude_from_sim no)
-		(at 62.738 103.378 0)
+		(at 34.29 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1080,9 +1080,9 @@
 		)
 		(uuid "0484d6dd-6710-4a8e-aff6-52f8fc977782")
 	)
-	(text "Alter params below to play with simulation.\nTheir names aren't really accurate to what they do lol:\n\nfreq = time between pulses\npulse_on = pulse on time\npeak_amp = what pulse amplitude starts at\ndecay_rate = Increase this to drop off pulse amplitudes faster\n"
+	(text "Alter params below to play with simulation:\n\nperiod = time between pulses\nwidth = pulse on-time\namp = starting pulse amplitude\nr0 = starting distance term for inverse-square scaling\ndr = distance increase per pulse (larger values cause pulse amplitudes to decay faster according to 1/r²)"
 		(exclude_from_sim no)
-		(at 43.942 87.122 0)
+		(at 20.066 87.884 0)
 		(effects
 			(font
 				(face "Arial")
@@ -1776,7 +1776,7 @@
 			)
 		)
 		(property "Value" "${SIM.PARAMS}"
-			(at 27.94 113.03 0)
+			(at 21.59 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1852,7 +1852,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "i=if((time-floor(time/freq)*freq)<pulse_on,peak_amp*(freq/(freq+time*decay_rate))^2,0)"
+		(property "Sim.Params" "i=\"if((time-floor(time/period)*period)<width, amp*(r0/(r0+floor(time/period)*dr))^2, 0)\""
 			(at 63.5 127 0)
 			(hide yes)
 			(show_name no)
