@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "photodiode_tia_circuit_v1.kicad_prl",
+    "filename": "photodiode_tia_circuit_simulation.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
