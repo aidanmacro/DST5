@@ -4,9 +4,7 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "+3.3V"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -19,17 +17,17 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": false,
-      "footprints": false,
-      "graphics": false,
+      "dimensions": true,
+      "footprints": true,
+      "graphics": true,
       "keepouts": true,
       "lockedItems": false,
-      "otherItems": false,
-      "pads": false,
-      "text": false,
-      "tracks": false,
-      "vias": false,
-      "zones": false
+      "otherItems": true,
+      "pads": true,
+      "text": true,
+      "tracks": true,
+      "vias": true,
+      "zones": true
     },
     "visible_items": [
       "vias",
@@ -56,7 +54,7 @@
       "ly_points"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,
@@ -65,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "photodiode_tia_circuit.kicad_prl",
+    "filename": "photodiode_tia_circuit_v1.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -96,14 +94,14 @@
     "col_widths": [
       162,
       147,
-      123,
-      101,
-      107,
-      126,
-      108,
-      107,
-      92,
-      92
+      91,
+      67,
+      91,
+      91,
+      91,
+      71,
+      91,
+      91
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
