@@ -89,7 +89,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -4655,7 +4654,7 @@
 			(uuid "75bac707-a002-4c13-aece-b91d40f7be2d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/Aidan/git_repos/DST5/KiCAD/DST5_custom_library/3D/STCS05DR.stp"
+		(model "D:/git_repos/DST5/KiCAD/DST5_custom_library/3dmodels/STCS05DR.stp"
 			(offset
 				(xyz 0 0 0)
 			)

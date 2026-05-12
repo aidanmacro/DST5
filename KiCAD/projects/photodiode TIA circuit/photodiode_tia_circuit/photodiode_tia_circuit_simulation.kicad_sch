@@ -1070,7 +1070,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".param period=100us \n.param width=10u\n.param amp=200n \n.param r0=1m \n.param dr=0.05m"
+	(text ".param period=990us \n.param width=10u\n.param amp=200n \n.param r0=1m \n.param dr=0.1m"
 		(exclude_from_sim no)
 		(at 34.29 102.87 0)
 		(effects
@@ -1123,18 +1123,6 @@
 		(uuid "69a7ce46-3fde-465a-b868-0c11b02b2aa4")
 	)
 	(junction
-		(at 107.95 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d09c2b03-ae80-4271-9a32-0f076eea7680")
-	)
-	(junction
-		(at 83.82 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5ce4bc1-427c-45db-bb2d-2c743cb1854b")
-	)
-	(junction
 		(at 63.5 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1168,16 +1156,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 115.57) (xy 114.3 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d7ce5f1-db02-40e4-aa72-591cce15af16")
-	)
-	(wire
-		(pts
 			(xy 53.34 121.92) (xy 53.34 115.57)
 		)
 		(stroke
@@ -1205,16 +1183,6 @@
 			(type default)
 		)
 		(uuid "26aafb61-7de2-4e1e-80ac-3b82ef1da67c")
-	)
-	(wire
-		(pts
-			(xy 63.5 115.57) (xy 83.82 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46837683-500d-46f6-85d8-e1cebef9c830")
 	)
 	(wire
 		(pts
@@ -1248,7 +1216,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 115.57) (xy 107.95 115.57)
+			(xy 63.5 115.57) (xy 114.3 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1408,16 +1376,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 118.11) (xy 107.95 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd8081fd-441d-4949-aff2-10425221a907")
-	)
-	(wire
-		(pts
 			(xy 119.38 97.79) (xy 114.3 97.79)
 		)
 		(stroke
@@ -1547,7 +1505,7 @@
 		(uuid "b50c9ff7-376c-4aff-82cf-6f7e47f7990b")
 	)
 	(label "pulse_current"
-		(at 101.6 118.11 0)
+		(at 99.06 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1854,7 +1812,7 @@
 			)
 		)
 		(property "Value" "${SIM.PARAMS}"
-			(at 21.59 112.522 0)
+			(at 21.082 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2028,84 +1986,6 @@
 			(project "photodiode_tia_circuit_simulation"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 83.82 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52e4b9dc-a4fa-43ae-a532-849d4970bca8")
-		(property "Reference" "#PWR016"
-			(at 83.82 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7dc08c2a-45f1-443d-b9e0-f8951916a946")
-		)
-		(instances
-			(project "photodiode_tia_circuit_simulation"
-				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -2684,85 +2564,6 @@
 			(project "photodiode_tia_circuit_simulation"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 83.82 119.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "981db8d5-5c6a-485b-b929-92cdb79414f2")
-		(property "Reference" "Rf4"
-			(at 89.408 119.126 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 90.17 122.174 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 82.042 119.38 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 83.82 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ce8a2387-30c6-46da-b87b-6449c38e782a")
-		)
-		(pin "2"
-			(uuid "0ee6345d-b206-4a58-9c1b-3134776b7c67")
-		)
-		(instances
-			(project "photodiode_tia_circuit_simulation"
-				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
-					(reference "Rf4")
 					(unit 1)
 				)
 			)
