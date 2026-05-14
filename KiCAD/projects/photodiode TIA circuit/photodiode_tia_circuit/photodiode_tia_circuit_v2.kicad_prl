@@ -4,11 +4,9 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "GND"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
-    "net_color_mode": 2,
+    "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
       "pads": 1.0,
@@ -19,17 +17,17 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": true,
-      "graphics": false,
-      "keepouts": false,
+      "graphics": true,
+      "keepouts": true,
       "lockedItems": false,
-      "otherItems": false,
-      "pads": false,
-      "text": false,
-      "tracks": false,
-      "vias": false,
-      "zones": false
+      "otherItems": true,
+      "pads": true,
+      "text": true,
+      "tracks": true,
+      "vias": true,
+      "zones": true
     },
     "visible_items": [
       "vias",
@@ -55,7 +53,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffd575_ff555555",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -65,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "pico_breakout_and_power.kicad_prl",
+    "filename": "photodiode_tia_circuit_v2.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -94,16 +92,16 @@
       9
     ],
     "col_widths": [
-      243,
-      221,
-      170,
-      138,
-      147,
-      174,
-      152,
-      147,
-      138,
-      138
+      222,
+      207,
+      136,
+      92,
+      136,
+      136,
+      136,
+      98,
+      136,
+      136
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
