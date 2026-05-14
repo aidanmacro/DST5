@@ -37,9 +37,13 @@ pico_sdk_init()
 
 if (TARGET tinyusb_device)
     add_executable(pico_usb
-            #pico_usb.c
-            pico_debug.c
+            pico_usb2.c
+            include/usb_descriptors.c
             )
+
+    target_include_directories(pico_usb PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}/include
+    )
 
     # pull in common dependencies
     target_link_libraries(pico_usb 
@@ -47,6 +51,8 @@ if (TARGET tinyusb_device)
         hardware_adc
         hardware_dma
         hardware_pwm
+        tinyusb_device
+        tinyusb_board
     )
 
     # enable usb output, disable uart output
