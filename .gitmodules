@@ -1,3 +1,0 @@
-[submodule "KiCAD/external_libs/pi_pico"]
-	path = KiCAD/external_libs/pi_pico
-	url = https://github.com/recursivenomad/ki-lime-pi-to-go.git
