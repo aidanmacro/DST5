@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -8,27 +8,27 @@
       "GND"
     ],
     "high_contrast_mode": 0,
-    "net_color_mode": 2,
+    "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
       "pads": 1.0,
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.6
+      "zones": 0.44999998807907104
     },
     "prototype_zone_fills": false,
     "selection_filter": {
       "dimensions": true,
-      "footprints": true,
+      "footprints": false,
       "graphics": true,
       "keepouts": true,
       "lockedItems": true,
       "otherItems": true,
-      "pads": true,
-      "text": true,
-      "tracks": true,
-      "vias": true,
+      "pads": false,
+      "text": false,
+      "tracks": false,
+      "vias": false,
       "zones": true
     },
     "visible_items": [
@@ -55,7 +55,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "visible_layers": "ffffffff_ffffffff_ffffd575_f7555554",
     "zone_display_mode": 0
   },
   "git": {
@@ -65,7 +65,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "pico_breakout_and_power.kicad_prl",
+    "filename": "final_pico.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -96,14 +96,14 @@
     "col_widths": [
       162,
       147,
-      113,
-      92,
-      98,
-      116,
-      101,
-      98,
-      92,
-      92
+      91,
+      67,
+      91,
+      91,
+      91,
+      71,
+      91,
+      91
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
