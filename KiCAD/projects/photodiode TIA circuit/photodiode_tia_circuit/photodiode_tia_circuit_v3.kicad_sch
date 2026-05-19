@@ -1503,12 +1503,6 @@
 		(uuid "0cc6fe55-e27e-4103-9380-9dad3751776e")
 	)
 	(junction
-		(at 102.87 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16cb0898-ebf7-4ac8-99cc-a49e9f234a31")
-	)
-	(junction
 		(at 114.3 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1579,12 +1573,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fceb61a7-ddd4-41ba-b90c-a2c02180ebee")
-	)
-	(junction
-		(at 113.03 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd9fe787-71ed-44ee-886f-eeae4f594198")
 	)
 	(wire
 		(pts
@@ -1658,7 +1646,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 156.21) (xy 102.87 156.21)
+			(xy 96.52 156.21) (xy 116.84 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1715,16 +1703,6 @@
 			(type default)
 		)
 		(uuid "2eec99f5-51d6-4422-9661-4f6ec85feed1")
-	)
-	(wire
-		(pts
-			(xy 113.03 156.21) (xy 116.84 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d31ce1d-e50d-4c0b-a92d-159169131016")
 	)
 	(wire
 		(pts
@@ -1798,13 +1776,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 156.21) (xy 113.03 156.21)
+			(xy 102.87 133.35) (xy 102.87 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b7d3b7c-1f5e-480b-9b75-17adf6ffe732")
+		(uuid "6c7bedad-4a72-4e3c-a045-fcdf34f71863")
 	)
 	(wire
 		(pts
@@ -1815,16 +1793,6 @@
 			(type default)
 		)
 		(uuid "6d0a4299-fe22-429c-b992-77758e27d871")
-	)
-	(wire
-		(pts
-			(xy 113.03 127) (xy 113.03 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fbe6b07-4010-4944-a857-9fd40a6b47c1")
 	)
 	(wire
 		(pts
@@ -1998,16 +1966,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 133.35) (xy 102.87 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc32e48a-1225-4943-88a9-0d8ad5be3e68")
-	)
-	(wire
-		(pts
 			(xy 114.3 91.44) (xy 114.3 102.87)
 		)
 		(stroke
@@ -2128,6 +2086,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 127) (xy 113.03 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1b704b-1cc2-4541-a881-4fd81372452d")
+	)
+	(wire
+		(pts
 			(xy 173.99 96.52) (xy 173.99 81.28)
 		)
 		(stroke
@@ -2240,7 +2208,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPA2320"
+		(property "Value" "MCP6292"
 			(at 104.14 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2251,7 +2219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OPA2320:D8-M"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 105.41 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2505,7 +2473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P5.00mm"
 			(at 127 90.4748 0)
 			(hide yes)
 			(show_name no)
@@ -2575,7 +2543,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA2320"
+		(property "Value" "MCP6292"
 			(at 151.13 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2585,7 +2553,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OPA2320:D8-M"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 151.13 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2684,7 +2652,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P5.00mm"
 			(at 86.6648 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -3038,6 +3006,83 @@
 			(project "photodiode_tia_circuit"
 				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
 					(reference "Rf1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a703291-b7a4-44c1-a7cc-962f9a2e4741")
+		(property "Reference" "#PWR06"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.314 139.192 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06401215-1ed3-407e-9d9e-b1ab4f918e17")
+		)
+		(instances
+			(project "photodiode_tia_circuit"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3462,7 +3507,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA2320"
+		(property "Value" "MCP6292"
 			(at 124.714 123.952 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3472,7 +3517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OPA2320:D8-M"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads"
 			(at 125.73 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -3852,6 +3897,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 113.03 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3cc9345-41ff-4c9a-bee7-d0f7178d2019")
+		(property "Reference" "#PWR09"
+			(at 113.03 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49ccacf7-e23f-486d-ab9b-8071c63b7992")
+		)
+		(instances
+			(project "photodiode_tia_circuit"
+				(path "/c9490f31-99a0-4a89-8aa1-95c2524c298c"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 102.87 58.42 0)
 		(unit 1)
@@ -3961,7 +4084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P5.00mm"
 			(at 118.11 61.2648 0)
 			(hide yes)
 			(show_name no)
@@ -4112,7 +4235,7 @@
 				)
 			)
 		)
-		(property "Value" "180k"
+		(property "Value" "100k"
 			(at 148.59 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4286,7 +4409,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P5.00mm"
 			(at 184.4548 105.41 0)
 			(hide yes)
 			(show_name no)
