@@ -1623,7 +1623,7 @@
 		(uuid "b50c9ff7-376c-4aff-82cf-6f7e47f7990b")
 	)
 	(label "pulse_current"
-		(at 101.6 118.11 0)
+		(at 99.06 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2012,7 +2012,7 @@
 			)
 		)
 		(property "Value" "${SIM.PARAMS}"
-			(at 21.59 112.522 0)
+			(at 21.082 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
