@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <string.h>
 #include <stdbool.h>
 
 #include <bsp/board_api.h>
@@ -10,6 +9,7 @@
 #include "pico/stdlib.h"
 #include "hardware/adc.h"
 #include "hardware/pwm.h"
+#include "hardware/dma.h"
 #include "hardware/irq.h"
 
 #define PWM_PIN 22
@@ -20,10 +20,10 @@
 #define BUFFER_SAMPLES 512
 #define PACKET_BUFFERS 8
 
-#define SAMPLE_PERIOD_US 2000
+#define ADC_SAMPLE_RATE_HZ 100000
 
-#define MAGIC1 0x5049434F  // "PICO"
-#define MAGIC2 0x41444321  // "ADC!"
+#define MAGIC1 0x5049434F
+#define MAGIC2 0x41444321
 
 typedef struct __attribute__((packed)) {
     uint32_t magic1;
@@ -48,7 +48,7 @@ static volatile uint32_t dropped_buffers = 0;
 static volatile uint8_t write_index = 0;
 static volatile uint8_t read_index = 0;
 
-static volatile bool capture_requested = false;
+static int dma_chan;
 
 static uint16_t checksum_u16(const uint16_t *data, uint16_t n)
 {
@@ -61,54 +61,8 @@ static uint16_t checksum_u16(const uint16_t *data, uint16_t n)
     return (uint16_t)(sum & 0xFFFF);
 }
 
-static void setup_pwm_pulse(void)
+static void finish_packet(packet_t *packet)
 {
-    gpio_set_function(PWM_PIN, GPIO_FUNC_PWM);
-
-    uint slice = pwm_gpio_to_slice_num(PWM_PIN);
-    uint channel = pwm_gpio_to_channel(PWM_PIN);
-
-    pwm_config config = pwm_get_default_config();
-
-    // PWM frequency:
-    //
-    // frequency = 125 MHz / clkdiv / (wrap + 1)
-    //
-    // 125 MHz / 125 / 1000 = 1 kHz
-    //
-    // duty cycle = level / (wrap + 1)
-    //
-    // level = 10 gives 1% duty cycle.
-    // With 1 kHz PWM, this gives 10 us on-time.
-
-    pwm_config_set_clkdiv(&config, 125.0f);
-    pwm_config_set_wrap(&config, 1999);
-
-    pwm_init(slice, &config, false);
-    pwm_set_chan_level(slice, channel, 20);
-    pwm_set_enabled(slice, true);
-}
-
-static bool capture_timer_callback(struct repeating_timer *t)
-{
-    (void)t;
-    capture_requested = true;
-    return true;
-}
-
-static void capture_adc_packet(void)
-{
-    packet_t *packet = &packets[write_index];
-
-    if (packet->ready) {
-        dropped_buffers++;
-        return;
-    }
-
-    for (uint16_t i = 0; i < BUFFER_SAMPLES; i++) {
-        packet->samples[i] = adc_read() & 0x0FFF;
-    }
-
     packet->header.magic1 = MAGIC1;
     packet->header.magic2 = MAGIC2;
     packet->header.sequence = sequence_number++;
@@ -124,9 +78,107 @@ static void capture_adc_packet(void)
     }
 }
 
+static void start_dma_capture(void)
+{
+    packet_t *packet = &packets[write_index];
+
+    if (packet->ready) {
+        dropped_buffers++;
+        return;
+    }
+
+    dma_channel_set_write_addr(
+        dma_chan,
+        packet->samples,
+        false
+    );
+
+    dma_channel_set_trans_count(
+        dma_chan,
+        BUFFER_SAMPLES,
+        true
+    );
+}
+
+static void dma_irq_handler(void)
+{
+    dma_hw->ints0 = 1u << dma_chan;
+
+    packet_t *packet = &packets[write_index];
+
+    finish_packet(packet);
+    start_dma_capture();
+}
+
+static void setup_pwm_pulse(void)
+{
+    gpio_set_function(PWM_PIN, GPIO_FUNC_PWM);
+
+    uint slice = pwm_gpio_to_slice_num(PWM_PIN);
+    uint channel = pwm_gpio_to_channel(PWM_PIN);
+
+    pwm_config config = pwm_get_default_config();
+
+    pwm_config_set_clkdiv(&config, 125.0f);
+    pwm_config_set_wrap(&config, 1999);
+
+    pwm_init(slice, &config, false);
+    pwm_set_chan_level(slice, channel, 20);
+
+    pwm_set_counter(slice, 0);
+    pwm_set_enabled(slice, true);
+}
+
+static void setup_adc_dma(void)
+{
+    adc_init();
+    adc_gpio_init(ADC_GPIO);
+    adc_select_input(ADC_INPUT);
+
+    adc_fifo_setup(
+        true,
+        true,
+        1,
+        false,
+        false
+    );
+
+    float clkdiv = 48000000.0f / ADC_SAMPLE_RATE_HZ;
+
+    adc_set_clkdiv(clkdiv);
+
+    dma_chan = dma_claim_unused_channel(true);
+
+    dma_channel_config config = dma_channel_get_default_config(dma_chan);
+
+    channel_config_set_transfer_data_size(&config, DMA_SIZE_16);
+    channel_config_set_read_increment(&config, false);
+    channel_config_set_write_increment(&config, true);
+    channel_config_set_dreq(&config, DREQ_ADC);
+
+    dma_channel_configure(
+        dma_chan,
+        &config,
+        NULL,
+        &adc_hw->fifo,
+        BUFFER_SAMPLES,
+        false
+    );
+
+    dma_channel_set_irq0_enabled(dma_chan, true);
+    irq_set_exclusive_handler(DMA_IRQ_0, dma_irq_handler);
+    irq_set_enabled(DMA_IRQ_0, true);
+
+    adc_fifo_drain();
+
+    start_dma_capture();
+
+    adc_run(true);
+}
+
 static void cdc_write_chunks(uint8_t itf, const uint8_t *data, uint32_t len)
 {
-    const uint32_t chunk_size = 32;
+    const uint32_t chunk_size = 64;
     uint32_t sent = 0;
 
     while (sent < len) {
@@ -163,7 +215,11 @@ void custom_cdc_task(void)
         return;
     }
 
-    cdc_write_chunks(1, (const uint8_t *)&packet->header, sizeof(packet_header_t));
+    cdc_write_chunks(
+        1,
+        (const uint8_t *)&packet->header,
+        sizeof(packet_header_t)
+    );
 
     cdc_write_chunks(
         1,
@@ -193,32 +249,15 @@ int main(void)
 
     stdio_init_all();
 
-    setup_pwm_pulse();
-
-    adc_init();
-    adc_gpio_init(ADC_GPIO);
-    adc_select_input(ADC_INPUT);
-
     for (uint8_t i = 0; i < PACKET_BUFFERS; i++) {
         packets[i].ready = false;
     }
 
-    struct repeating_timer capture_timer;
-    add_repeating_timer_us(
-        -SAMPLE_PERIOD_US,
-        capture_timer_callback,
-        NULL,
-        &capture_timer
-    );
+    setup_pwm_pulse();
+    setup_adc_dma();
 
     while (1) {
         tud_task();
-
-        if (capture_requested) {
-            capture_requested = false;
-            capture_adc_packet();
-        }
-
         custom_cdc_task();
     }
 

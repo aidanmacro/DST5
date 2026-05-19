@@ -31,6 +31,7 @@ pico_sdk_init()
 
 add_executable(pico_usb
     main.c
+    #exp.c
     usb_descriptors.c
 )
 
