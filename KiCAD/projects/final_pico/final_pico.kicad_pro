@@ -656,7 +656,7 @@
         "uuid": "1ff1132d-c75a-49a5-bbcb-5173e3ac2433"
       }
     ],
-    "used_designators": "R1,U1,ADC_cap1,C1,#PWR6-7,ADC_Pulldown1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

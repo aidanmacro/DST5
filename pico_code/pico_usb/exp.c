@@ -20,7 +20,9 @@
 #define BUFFER_SAMPLES 512
 #define PACKET_BUFFERS 8
 
-#define ADC_SAMPLE_RATE_HZ 100000
+#define ADC_SAMPLE_RATE_HZ 500000
+
+#define CDC_ITF 1
 
 #define MAGIC1 0x5049434F
 #define MAGIC2 0x41444321
@@ -47,6 +49,8 @@ static volatile uint32_t dropped_buffers = 0;
 
 static volatile uint8_t write_index = 0;
 static volatile uint8_t read_index = 0;
+
+static volatile bool dma_running = false;
 
 static int dma_chan;
 
@@ -78,14 +82,21 @@ static void finish_packet(packet_t *packet)
     }
 }
 
-static void start_dma_capture(void)
+static bool start_dma_capture(void)
 {
     packet_t *packet = &packets[write_index];
 
     if (packet->ready) {
         dropped_buffers++;
-        return;
+        dma_running = false;
+        return false;
     }
+
+    dma_channel_set_read_addr(
+        dma_chan,
+        &adc_hw->fifo,
+        false
+    );
 
     dma_channel_set_write_addr(
         dma_chan,
@@ -98,15 +109,22 @@ static void start_dma_capture(void)
         BUFFER_SAMPLES,
         true
     );
+
+    dma_running = true;
+
+    return true;
 }
 
 static void dma_irq_handler(void)
 {
     dma_hw->ints0 = 1u << dma_chan;
 
+    dma_running = false;
+
     packet_t *packet = &packets[write_index];
 
     finish_packet(packet);
+
     start_dma_capture();
 }
 
@@ -143,9 +161,15 @@ static void setup_adc_dma(void)
         false
     );
 
-    float clkdiv = 48000000.0f / ADC_SAMPLE_RATE_HZ;
+    float clkdiv = (48000000.0f / ADC_SAMPLE_RATE_HZ) - 1.0f;
+
+    if (clkdiv < 0.0f) {
+        clkdiv = 0.0f;
+    }
 
     adc_set_clkdiv(clkdiv);
+
+    adc_fifo_drain();
 
     dma_chan = dma_claim_unused_channel(true);
 
@@ -169,11 +193,16 @@ static void setup_adc_dma(void)
     irq_set_exclusive_handler(DMA_IRQ_0, dma_irq_handler);
     irq_set_enabled(DMA_IRQ_0, true);
 
-    adc_fifo_drain();
-
     start_dma_capture();
 
     adc_run(true);
+}
+
+static void maybe_restart_dma(void)
+{
+    if (!dma_running && !packets[write_index].ready) {
+        start_dma_capture();
+    }
 }
 
 static void cdc_write_chunks(uint8_t itf, const uint8_t *data, uint32_t len)
@@ -208,21 +237,23 @@ void custom_cdc_task(void)
     packet_t *packet = &packets[read_index];
 
     if (!packet->ready) {
+        maybe_restart_dma();
         return;
     }
 
-    if (!tud_cdc_n_connected(1)) {
+    if (!tud_cdc_n_connected(CDC_ITF)) {
+        maybe_restart_dma();
         return;
     }
 
     cdc_write_chunks(
-        1,
+        CDC_ITF,
         (const uint8_t *)&packet->header,
         sizeof(packet_header_t)
     );
 
     cdc_write_chunks(
-        1,
+        CDC_ITF,
         (const uint8_t *)packet->samples,
         BUFFER_SAMPLES * sizeof(uint16_t)
     );
@@ -233,6 +264,8 @@ void custom_cdc_task(void)
     if (read_index >= PACKET_BUFFERS) {
         read_index = 0;
     }
+
+    maybe_restart_dma();
 }
 
 void tud_cdc_rx_cb(uint8_t itf)

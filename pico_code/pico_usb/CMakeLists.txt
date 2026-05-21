@@ -30,8 +30,8 @@ project(pico_usb C CXX ASM)
 pico_sdk_init()
 
 add_executable(pico_usb
-    main.c
-    #exp.c
+    #main.c
+    exp.c
     usb_descriptors.c
 )
 
