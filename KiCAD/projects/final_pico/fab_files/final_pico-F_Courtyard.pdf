@@ -1,0 +1,388 @@
+%PDF-1.5
+%€‚ƒ
+5 0 obj
+<< /Length 6 0 R /Filter /FlateDecode >>
+stream
+xÚ”AnÄ E÷='@¶Á6œ R—#tQ©b6İôú5™Äi†DQ$şƒ|lc@)@öáÇ=`x³÷ë1¾?×Áûk(1eÉ~^s‚5Ja[¬@•c
+¢1Üƒ&¨ÅI›®¹õêz¦wÇÛ HŠ9äª¤‘,¶BĞöÙH›ûšŸw¾BÜycF›eË¨ÇˆVÙM·gš5áİíWˆ»c#I9ˆXµcí'ËÙr'mB¬Ø³‘„õTï]{·è5¢‰Év‘5¿3í£I%ÑîJTd9¿ŞË9²“6#èİr î|…¸ó¸Çò²JkYî¨ëvÒfu İõL»ã“;ZĞfErIÿ‡&!Ën#mFHX]v$›óâÎÓúÙ…«ÀŸú­¤M×’yÙíH6ç+dw¾½üªd,l
+endstream
+endobj
+6 0 obj
+329
+endobj
+15 0 obj
+[7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R]
+endobj
+16 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/Resources <<
+    /ProcSet [/PDF /Text /ImageC /ImageB]
+    /Font 2 0 R
+    /XObject 3 0 R >>
+/MediaBox [0 0 841.896 595.296]
+/Contents 5 0 R
+/Annots 15 0 R>>
+endobj
+17 0 obj
+<</S /GoTo /D [16 0 R /Fit]
+>>
+endobj
+20 0 obj
+<</S /GoTo /D [16 0 R /FitR 494 443 537 416]
+>>
+endobj
+22 0 obj
+<</S /GoTo /D [16 0 R /FitR 525 373 616 318]
+>>
+endobj
+24 0 obj
+<</S /GoTo /D [16 0 R /FitR 530 425 621 385]
+>>
+endobj
+26 0 obj
+<</S /GoTo /D [16 0 R /FitR 444 645 575 227]
+>>
+endobj
+28 0 obj
+<</S /GoTo /D [16 0 R /FitR 479 461 545 432]
+>>
+endobj
+30 0 obj
+<</S /GoTo /D [16 0 R /FitR 549 462 604 437]
+>>
+endobj
+32 0 obj
+<</S /GoTo /D [16 0 R /FitR 537 492 580 437]
+>>
+endobj
+34 0 obj
+<</S /GoTo /D [16 0 R /FitR 549 443 604 426]
+>>
+endobj
+2 0 obj
+<<
+>>
+endobj
+3 0 obj
+<<
+
+>>
+endobj
+7 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [506.055 428.265 526.323 436.91]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = ADC_cap1"],
+["Value = 100n"],
+["Footprint = C_Disc_D5.0mm_W2.5mm_P5.00mm"],
+["Description = Unpolarized capacitor"],
+["KiLib_Generator = capacitor/THT/other"],
+]\);) >>
+>>
+endobj
+8 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [547.866 331.887 593.362 359.453]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = J1"],
+["Value = Conn_01x05_Socket"],
+["Footprint = JST_EH_S5B-EH_1x05_P2.50mm_Horizontal"],
+["Description = Generic connector, single row, 01x05, script generated"],
+["KiLib_Generator = connector/JST"],
+]\);) >>
+>>
+endobj
+9 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [561.898 401.194 591.803 415.225]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = Q1"],
+["Value = STP36NF06L MOSFET"],
+["Footprint = TO-220-3_Vertical"],
+["http://www.irf.com/product-info/datasheets/data/irlz44n.pdf", "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"],
+["Description = 47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"],
+["KiLib_Generator = package/TO_SOT/THT"],
+]\);) >>
+>>
+endobj
+10 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [477.426 331.938 542.991 541.064]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = A2"],
+["Value = RaspberryPi_Pico"],
+["Footprint = RaspberryPi_Pico_Common_THT"],
+["https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf", "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"],
+["Description = Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash"],
+]\);) >>
+>>
+endobj
+11 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [498.657 439.887 526.351 448.532]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = ADC_Pulldown1"],
+["Value = 1K"],
+["Footprint = R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"],
+["Description = Resistor"],
+["KiLib_Generator = resistor/THT"],
+]\);) >>
+>>
+endobj
+12 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [563.003 443.572 590.698 452.217]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = R_pulldown1"],
+["Value = 100k"],
+["Footprint = R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"],
+["Description = Resistor"],
+["KiLib_Generator = resistor/THT"],
+]\);) >>
+>>
+endobj
+13 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [548.433 451.055 557.079 478.75]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = R_series1"],
+["Value = 12.5"],
+["Footprint = R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"],
+["Description = Resistor"],
+["KiLib_Generator = resistor/THT"],
+]\);) >>
+>>
+endobj
+14 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [563.003 430.816 590.698 439.461]
+/Border [16 16 0]
+/A << /Type /Action /S /JavaScript /JS (ShM\([
+["Reference designator = R_gate1"],
+["Value = 100"],
+["Footprint = R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"],
+["Description = Resistor"],
+["KiLib_Generator = resistor/THT"],
+]\);) >>
+>>
+endobj
+4 0 obj
+<< /JavaScript
+ << /Names
+    [ (JSInit) << /Type /Action /S /JavaScript /JS (
+function ShM\(aEntries\) {
+    var aParams = [];
+    for \(var i in aEntries\) {
+        aParams.push\({
+            cName: aEntries[i][0],
+            cReturn: aEntries[i][1]
+        }\)
+    }
+
+    var cChoice = app.popUpMenuEx.apply\(app, aParams\);
+    if \(cChoice != null && cChoice.substring\(0, 1\) == '#'\) this.pageNum = parseInt\(cChoice.slice\(1\)\);
+    else if \(cChoice != null && cChoice.substring\(0, 4\) == 'http'\) app.launchURL\(cChoice\);
+    else if \(cChoice != null && cChoice.substring\(0, 4\) == 'file'\) app.openDoc\(cChoice.substring\(7\)\);
+}
+) >> ]
+ >>
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Kids [
+16 0 R
+]
+/Count 1
+>>
+endobj
+36 0 obj
+<<
+/Producer (KiCad PDF)
+/CreationDate (D:2026:05:24:10:29:07)
+/Creator (PCBNEW)
+/Title (final_pico-F_Courtyard.pdf)
+/Author ()
+/Subject ()
+>>
+endobj
+27 0 obj
+<<
+/Title (A2)
+/Parent 19 0 R
+/Next 29 0 R
+/A 26 0 R
+>>
+endobj
+29 0 obj
+<<
+/Title (ADC_Pulldown1)
+/Parent 19 0 R
+/Next 21 0 R
+/Prev 27 0 R
+/A 28 0 R
+>>
+endobj
+21 0 obj
+<<
+/Title (ADC_cap1)
+/Parent 19 0 R
+/Next 23 0 R
+/Prev 29 0 R
+/A 20 0 R
+>>
+endobj
+23 0 obj
+<<
+/Title (J1)
+/Parent 19 0 R
+/Next 25 0 R
+/Prev 21 0 R
+/A 22 0 R
+>>
+endobj
+25 0 obj
+<<
+/Title (Q1)
+/Parent 19 0 R
+/Next 35 0 R
+/Prev 23 0 R
+/A 24 0 R
+>>
+endobj
+35 0 obj
+<<
+/Title (R_gate1)
+/Parent 19 0 R
+/Next 31 0 R
+/Prev 25 0 R
+/A 34 0 R
+>>
+endobj
+31 0 obj
+<<
+/Title (R_pulldown1)
+/Parent 19 0 R
+/Next 33 0 R
+/Prev 35 0 R
+/A 30 0 R
+>>
+endobj
+33 0 obj
+<<
+/Title (R_series1)
+/Parent 19 0 R
+/Prev 31 0 R
+/A 32 0 R
+>>
+endobj
+19 0 obj
+<<
+/Title (Footprints)
+/Parent 18 0 R
+/Count -8
+/First 27 0 R
+/Last 33 0 R
+/A 17 0 R
+>>
+endobj
+18 0 obj
+<<
+/Title (F.Courtyard \(Page 3\))
+/Parent 37 0 R
+/Count -1
+/First 19 0 R
+/Last 19 0 R
+/A 17 0 R
+>>
+endobj
+37 0 obj
+<< /Type /Outlines
+   /Count 10
+   /First 18 0 R
+   /Last 18 0 R
+>>
+endobj
+38 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Version /1.5
+/PageMode /UseOutlines
+/Outlines 37 0 R
+/Names 4 0 R
+/PageLayout /SinglePage
+>>
+endobj
+xref
+0 39
+0000000000 65535 f 
+0000005214 00000 n 
+0000001271 00000 n 
+0000001292 00000 n 
+0000004535 00000 n 
+0000000015 00000 n 
+0000000418 00000 n 
+0000001314 00000 n 
+0000001661 00000 n 
+0000002052 00000 n 
+0000002576 00000 n 
+0000003135 00000 n 
+0000003487 00000 n 
+0000003839 00000 n 
+0000004188 00000 n 
+0000000437 00000 n 
+0000000508 00000 n 
+0000000712 00000 n 
+0000006229 00000 n 
+0000006125 00000 n 
+0000000759 00000 n 
+0000005601 00000 n 
+0000000823 00000 n 
+0000005692 00000 n 
+0000000887 00000 n 
+0000005777 00000 n 
+0000000951 00000 n 
+0000005433 00000 n 
+0000001015 00000 n 
+0000005505 00000 n 
+0000001079 00000 n 
+0000005952 00000 n 
+0000001143 00000 n 
+0000006046 00000 n 
+0000001207 00000 n 
+0000005862 00000 n 
+0000005274 00000 n 
+0000006345 00000 n 
+0000006429 00000 n 
+trailer
+<< /Size 39 /Root 38 0 R /Info 36 0 R >>
+startxref
+6570
+%%EOF
