@@ -1,14 +1,22 @@
-Power
+
 
 
 
 **NOTES**
+
+
+
+&#x09;**PinHeader\_1x13\_P2.54mm\_Vertical.step**
 
 &#x09;
 
 &#x09;Uni has KiCAD v9.01.
 
 &#x09;
+
+&#x09;CANT USE ADC2 WITH WIFI! Using 'sensor\_vp' as this is definitely ADC1\_CH0.	It doesn't have internal pulldown though so that's been added.	
+
+
 
 &#x09;Pretty sure the onboard regulator will safely power the esp32 from VIN with	4.5-12V.
 
@@ -23,6 +31,46 @@ Power
 
 
 &#x09;could 3v3 output on MYOSA power opamps? Yes, it doesn't really draw power.
+
+
+
+&#x09;Want to make easy access for powering with PSU. Switch to choose between 	battery and PSU? If MYOSA is plugged in, still need 5V for LED.
+
+
+
+&#x09;	battery: powering both MYOSA and LED
+
+&#x09;	PSU: powering both MYOSA and LED
+
+&#x09;	USB: Powers only MYOSA, battery/PSU required for LED
+
+
+
+&#x09;Test points? 
+
+&#x09;	
+
+&#x09;	Voltage sources
+
+&#x09;	PWM out
+
+&#x09;	Either end of LED
+
+
+
+**Measurements required/things to check**
+
+
+
+&#x09;9V Battery holder
+
+&#x09;LED Size
+
+&#x09;Banana plugs
+
+&#x09;Switches
+
+&#x09;Connectors to BMP module/LED+Photodiode
 
 
 
