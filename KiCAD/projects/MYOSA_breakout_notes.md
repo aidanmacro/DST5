@@ -72,7 +72,11 @@
 
 &#x09;Connectors to BMP module/LED+Photodiode
 
+
+
 &#x09;Should BMP180 be separate connector?
+
+&#x09;Should battery be on other side?
 
 
 
