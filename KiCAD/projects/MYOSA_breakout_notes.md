@@ -72,6 +72,8 @@
 
 &#x09;Connectors to BMP module/LED+Photodiode
 
+&#x09;Should BMP180 be separate connector?
+
 
 
 **LED:** 1% duty cycle, 20us on, 1980us off (500Hz)
