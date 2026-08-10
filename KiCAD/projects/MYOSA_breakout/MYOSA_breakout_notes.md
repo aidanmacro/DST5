@@ -1,4 +1,4 @@
-Power
+
 
 
 
@@ -6,7 +6,19 @@ Power
 
 
 
-&#x09;Pretty sure the onboard regulator will safely power the esp32 from VIN with	4.5-12V. 
+&#x09;**PinHeader\_1x13\_P2.54mm\_Vertical.step**
+
+&#x09;
+
+&#x09;Uni has KiCAD v9.01.
+
+&#x09;
+
+&#x09;CANT USE ADC2 WITH WIFI! Using 'sensor\_vp' as this is definitely ADC1\_CH0.	It doesn't have internal pulldown though so that's been added.	
+
+
+
+&#x09;Pretty sure the onboard regulator will safely power the esp32 from VIN with	4.5-12V.
 
 
 
@@ -22,11 +34,57 @@ Power
 
 
 
+&#x09;Want to make easy access for powering with PSU. Switch to choose between 	battery and PSU? If MYOSA is plugged in, still need 5V for LED.
+
+
+
+&#x09;	battery: powering both MYOSA and LED
+
+&#x09;	PSU: powering both MYOSA and LED
+
+&#x09;	USB: Powers only MYOSA, battery/PSU required for LED
+
+
+
+&#x09;Test points? 
+
+&#x09;	
+
+&#x09;	Voltage sources
+
+&#x09;	PWM out
+
+&#x09;	Either end of LED
+
+
+
+**Measurements required/things to check**
+
+
+
+&#x09;9V Battery holder
+
+&#x09;LED Size
+
+&#x09;Banana plugs
+
+&#x09;Switches
+
+&#x09;Connectors to BMP module/LED+Photodiode
+
+
+
+&#x09;Should BMP180 be separate connector?
+
+&#x09;Should battery be on other side?
+
+
+
 **LED:** 1% duty cycle, 20us on, 1980us off (500Hz)
 
 
 
-&#x09;3R4 series resistor drops 1.7V so LED has 3.3V across it, corresponding to 	\~450mA. 
+&#x09;3R4 series resistor drops 1.7V so LED has 3.3V across it, corresponding to 	\~450mA.
 
 
 
@@ -50,7 +108,7 @@ Power
 
 
 
-**MYOSA** 
+**MYOSA**
 
 
 
@@ -58,7 +116,7 @@ Power
 
 
 
-&#x09;Probably want to maintain 5V supply to LED so that there is a current 	limiting resistor and some headroom? Otherwise, could power with 3.3V and 	no resistor. Still need something that can supply the current spikes, MYOSA 	can't. 
+&#x09;Probably want to maintain 5V supply to LED so that there is a current 	limiting resistor and some headroom? Otherwise, could power with 3.3V and 	no resistor. Still need something that can supply the current spikes, MYOSA 	can't.
 
 
 
@@ -74,7 +132,7 @@ has **AMS1117 (T33 F80LC)** fixed 3V3 voltage regulator.
 
 &#x09;< Absolute max 15V input (4.5-7V recommended)
 
-&#x09;1.3V dropout at worst so 4.6V minimum 
+&#x09;1.3V dropout at worst so 4.6V minimum
 
 
 
@@ -83,4 +141,8 @@ has **AMS1117 (T33 F80LC)** fixed 3V3 voltage regulator.
 
 
 &#x09;Absolute max input 3.6V. Provided 3V3 by AMS1117.
+
+
+
+&#x09;All GPIO pins support either LED or motor PWM.
 
