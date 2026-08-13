@@ -9,7 +9,7 @@ import pyqtgraph as pg
 from PyQt6 import QtWidgets, QtCore
 
 PORT = "COM8"
-BAUD = 115200
+BAUD = 2000000
 EXPECTED_SAMPLES = 512
 
 ROLLING_BUFFER_SAMPLES = 8192
@@ -71,8 +71,8 @@ def serial_thread():
     global rolling_volts, latest_status
 
     ser = serial.Serial(PORT, BAUD, timeout=0.1)
-    ser.dtr = False
-    ser.rts = False
+    #ser.dtr = False
+    #ser.rts = False
     ser.reset_input_buffer()
 
     try:

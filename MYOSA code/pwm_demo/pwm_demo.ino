@@ -9,7 +9,7 @@
 #define PACKET_BUFFERS 8
 
 // Timer interval in microseconds (2us = 500kHz).
-#define SAMPLE_PERIOD_US 1000
+#define SAMPLE_PERIOD_US 4
 
 // These match the b"OCIP!CDA" expected by the Python script's wait_for_magic()
 #define MAGIC1 0x5049434F 
