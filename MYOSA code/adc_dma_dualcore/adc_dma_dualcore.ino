@@ -280,9 +280,9 @@ void setup() {
 
     // --- LED PWM setup (unrelated to the ADC/DMA path) ---
 
-    ledcAttach(PWM_PIN, 1000, 12);
+    ledcAttach(PWM_PIN, 100, 12);
 
-    ledcWrite(PWM_PIN, 41); // ~1% duty at 12-bit resolution
+    ledcWrite(PWM_PIN, 81); // ~1% duty at 12-bit resolution
 
 
 

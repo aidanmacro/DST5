@@ -2,7 +2,7 @@
 
 // --- Hardware Pins ---
 #define PWM_PIN 4        // Pin driving the LED
-#define ADC_PIN 36        // ADC pin for photodiode/TIA (Use ADC1 pins like 32, 33, 34, 35)
+#define ADC_PIN 36       // ADC pin for photodiode/TIA (Use ADC1 pins like 32, 33, 34, 35)
 
 // --- Buffer & Packet Config ---
 #define BUFFER_SAMPLES 512
@@ -101,11 +101,11 @@ void setup() {
 
     // --- Core 3.x PWM Setup ---
     // ledcAttach(pin, frequency, resolution)
-    ledcAttach(PWM_PIN, 1000, 12); 
+    ledcAttach(PWM_PIN, 100, 12); 
     
     // ledcWrite(pin, duty_cycle)
     // 12-bit resolution means 0-4095. 1% of 4096 is ~41.
-    ledcWrite(PWM_PIN, 41); 
+    ledcWrite(PWM_PIN, 532); 
 
     // Setup ADC
     analogReadResolution(12); // Ensures max value is 4095, as expected by the script

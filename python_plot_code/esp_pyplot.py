@@ -16,7 +16,7 @@ ROLLING_BUFFER_SAMPLES = 8192
 
 VREF = 3.3
 ADC_MAX = 4095.0
-ADC_SAMPLE_RATE_HZ = 500000
+ADC_SAMPLE_RATE_HZ = 200000
 
 MAGIC_BYTES = b"OCIP!CDA"
 
@@ -71,8 +71,8 @@ def serial_thread():
     global rolling_volts, latest_status
 
     ser = serial.Serial(PORT, BAUD, timeout=0.1)
-    #ser.dtr = False
-    #ser.rts = False
+    ser.dtr = False
+    ser.rts = False
     ser.reset_input_buffer()
 
     try:
@@ -100,14 +100,16 @@ def serial_thread():
 
             adc_u16 = np.frombuffer(raw, dtype="<u2").copy()
 
-            if adc_u16.max() > 4095:
-                continue
+            #if adc_u16.max() > 4095:
+            #    continue
 
             if checksum_u16(adc_u16) != checksum:
                 continue
+            # 2. Mask the upper 4 bits to guarantee values stay in the 0-4095 range
+            adc_u16 = adc_u16 & 0x0FFF
 
             volts = adc_u16.astype(np.float32) * (VREF / ADC_MAX)
-
+            
             status = (
                 f"min={volts.min():.3f} V | "
                 f"max={volts.max():.3f} V"
